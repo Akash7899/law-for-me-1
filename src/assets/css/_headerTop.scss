@@ -1,0 +1,12 @@
+.headerTop {
+  background: aliceblue;
+  padding: 10px;
+}
+.wrapperInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-right: 13px;
+  }
+}
