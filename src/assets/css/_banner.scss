@@ -1,0 +1,326 @@
+.banner {
+  padding: 80px 0px;
+  background: #f5f5f5;
+  @media (max-width: 420px) {
+    padding: 40px 0px;
+  }
+  .bannerImage {
+    text-align: center;
+    img {
+      width: 450px;
+      border: 5px solid #fff;
+      border-radius: 15px;
+      position: relative;
+      z-index: 999;
+    }
+  }
+  .right {
+    .content {
+      // width: 550px;
+      margin-bottom: 30px;
+      @media (max-width: 420px) {
+        text-align: center;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 95px;
+        padding-bottom: 15px;
+        @media (max-width: 420px) {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 50px;
+          padding-bottom: 15px;
+        }
+
+        span {
+          color: #1faaff;
+        }
+      }
+      p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+    .searchBtn {
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+
+      .serach-inpf {
+        background: #e4f5ff;
+        border: 0;
+        border-radius: 8px;
+        color: #24272c;
+        font-size: 14px;
+        height: 60px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        width: 100%;
+        padding: 0 15px 0 38px;
+        outline: none;
+        cursor: initial;
+        &::placeholder {
+          color: #2d2347;
+        }
+      }
+      .searchbtn {
+        position: absolute;
+        right: 0;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 48px;
+        width: 48px;
+        margin-right: 15px;
+        .serach-img {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          z-index: 99;
+          background: #fe1db3;
+          border: 0;
+          border-radius: 8px;
+          cursor: pointer;
+          display: inline-flex;
+          height: 48px;
+          width: 48px;
+          img {
+            margin: auto;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+.legalDocuments {
+  background: #f5f5f5;
+  .content {
+    h1 {
+      font-weight: bold;
+      font-size: 48px;
+      padding-bottom: 15px;
+      @media (max-width: 420px) {
+        font-size: 32px;
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 29px;
+      color: #797979;
+    }
+  }
+  .card1 {
+    gap: 20px;
+    @media (max-width: 420px) {
+      display: block !important;
+    }
+  }
+  .subcards {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+    flex-basis: 25%;
+    @media (max-width: 420px) {
+      margin-bottom: 15px;
+      justify-content: start !important ;
+    }
+    .icon {
+      padding: 10px;
+      border-radius: 8px;
+      background: #1faaff;
+    }
+    &:hover {
+      background: linear-gradient(180deg, #ff17b3 0%, #da189b 100%);
+      box-shadow: 48px 37px 104px rgba(20, 11, 72, 0.03);
+      border-radius: 20px;
+      .icon {
+        background: #fff;
+
+        img {
+          filter: invert(1);
+        }
+      }
+      .contnt {
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .cardMian {
+    background: #f2faff;
+    padding: 40px;
+    gap: 130px;
+    border-radius: 10px;
+    @media (max-width: 420px) {
+      display: block !important;
+    }
+    .cardleft {
+      .cardheading {
+        @media (max-width: 420px) {
+          text-align: center;
+        }
+        h2 {
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 68px;
+        }
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 29px;
+          color: #797979;
+          padding-bottom: 30px;
+          @media (max-width: 420px) {
+            padding-bottom: 15px;
+          }
+        }
+        img {
+          width: 90%;
+        }
+      }
+    }
+
+    .cardRight {
+      @media (max-width: 420px) {
+        padding-top: 30px;
+      }
+      .rightcard {
+        flex-wrap: wrap;
+        gap: 20px;
+        .summarycard {
+          flex-basis: 48%;
+          padding: 20px;
+          background: #fff;
+          border-radius: 8px;
+          @media (max-width: 420px) {
+            flex-basis: 100%;
+          }
+          .icon {
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background: #1faaff;
+          }
+          span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: #1faaff;
+          }
+          .card-content {
+            padding-top: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+          }
+          .Buttontest {
+            display: flex;
+            gap: 5px;
+            button.btn.btn-secondary {
+              background: #f2f2f2;
+              color: #2d2347;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              &:hover {
+                background: #c2bebe;
+              }
+            }
+            button.btn.btn-primary {
+              background: #1faaff;
+              color: #fff;
+              width: 56%;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 26px;
+              &:hover {
+                background: #2b90cf;
+              }
+            }
+          }
+          .horizentalLine {
+            position: relative;
+            padding: 12px 0;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 1.5px;
+              background: #dbdbdb;
+              position: absolute;
+              top: 55%;
+              left: 0;
+              transform: translateY(-50%);
+            }
+            .spanor {
+              font-size: 20px;
+              color: #232323;
+              letter-spacing: -0.5px;
+              margin: 0;
+              display: inline-block;
+              background-color: #fff;
+              padding: 0 15px 0 7px;
+              margin-left: 35%;
+              position: relative;
+            }
+          }
+          button.btn.btn-danger {
+            background: linear-gradient(180deg, #ff17b3 0%, #da189b 100%);
+            color: #fff;
+            width: 100%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            &:hover {
+              background: #f017a8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contnt {
+  p {
+    margin: 0;
+  }
+}
+
+.cardRight {
+  flex-basis: 50%;
+}
+.FullButton {
+  button {
+    width: 100%;
+  }
+}
+
+.bannersection {
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: calc(0vw - 30vw);
+  background-image: url("../images/Rectangle.png");
+  background-size: 100%100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  top: 145px;
+  left: calc(0vw - 15vw);
+  width: 660px;
+  height: 700px;
+  @media (max-width: 420px) {
+    display: none;
+  }
+}

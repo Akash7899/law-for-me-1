@@ -1,0 +1,85 @@
+.clientcards {
+  background: #f5f5f5;
+  @media (max-width: 420px) {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .cards {
+    @media (max-width: 420px) {
+      display: block !important;
+    }
+    .card {
+      border: none !important;
+      @media (max-width: 420px) {
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
+      .card-body {
+        box-shadow: 0px 60px 80px rgba(87, 152, 192, 0.18);
+        .card-name {
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 120%;
+          text-align: center;
+          letter-spacing: -0.03em;
+          color: #23242a;
+        }
+        .card-title {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 130%;
+          text-align: center;
+          color: #797979;
+        }
+        .card-text {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 130%;
+          text-align: center;
+          color: #797979;
+        }
+        a.btn.btn-primary {
+          background: #fff;
+          border: none;
+          color: #009eff;
+          text-decoration: underline;
+          &:hover {
+            color: #23242a;
+          }
+        }
+      }
+    }
+  }
+  .clientSection {
+    justify-content: space-between;
+    @media (max-width: 420px) {
+      display: block !important;
+      text-align: center;
+    }
+    .content {
+      h3 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 68px;
+        @media (max-width: 420px) {
+          font-size: 38px;
+        }
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 29px;
+      }
+    }
+    .viewall {
+      Button {
+        background: linear-gradient(180deg, #ff17b3 0%, #da189b 100%);
+        border-radius: 8px;
+        padding: 10px 40px;
+        &:hover {
+          background: #f017a8;
+        }
+      }
+    }
+  }
+}

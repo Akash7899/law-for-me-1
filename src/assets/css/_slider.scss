@@ -1,0 +1,119 @@
+.slidersection {
+  background: #f5f5f5;
+  .sliderHeading {
+    h1 {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 68px;
+      @media (max-width: 420px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 29px;
+    }
+    .content {
+      padding-bottom: 20px !important;
+    }
+  }
+  .slick-slider {
+    background: #f5f5f5;
+    .catagories {
+      width: 230px;
+      @media (max-width: 420px) {
+        width: 100%;
+      }
+      .catagories-slide {
+        position: relative;
+        img {
+          border-top-left-radius: 50px !important;
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+          background: linear-gradient(
+            180deg,
+            #181d24 0%,
+            rgba(24, 29, 36, 0) 100%
+          );
+          opacity: 0.8;
+          @media (max-width: 420px) {
+            width: 100%;
+          }
+        }
+        .buillding {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 34px;
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          transform: translate(-50%, -50%);
+          display: none;
+          // transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        }
+        .text {
+          p {
+            margin: 0 auto;
+            padding: 15px;
+            width: 90%;
+            position: relative;
+            bottom: 30px;
+            background: #ffffff;
+            box-shadow: 0px 60px 80px rgba(87, 152, 192, 0.02);
+            border-radius: 10px;
+            .rightarrow {
+              display: none;
+              @media (max-width: 420px) {
+                display: inline-block;
+              }
+            }
+          }
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+          }
+          .buillding {
+            display: inline-block;
+          }
+          .text {
+            p {
+              bottom: 20px;
+              .rightarrow {
+                display: inline-block;
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #1faaff !important;
+  font-size: 32px;
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+button.slick-arrow.slick-prev {
+  position: absolute;
+  top: -130px;
+  left: 75%;
+  bottom: 22px;
+}
+
+button.slick-arrow.slick-next {
+  position: absolute;
+  top: -130px;
+  right: 20%;
+}

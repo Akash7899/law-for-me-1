@@ -1,0 +1,12 @@
+.pinkbutton {
+  background: linear-gradient(180deg, #ff17b3 0%, #da189b 100%);
+  border-radius: 8px;
+  padding: 10px 40px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  &:hover {
+    background: #f017a8;
+  }
+}

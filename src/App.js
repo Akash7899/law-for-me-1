@@ -1,9 +1,9 @@
-import Header from "./layout/header";
-
+import Home from "./component/Home";
+import React from "react";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Home />
     </div>
   );
 }
